@@ -24,5 +24,6 @@ public class StudentCtrl {
 
         repo.save(std);
         return "Hello "+name;
+
     }
 }
