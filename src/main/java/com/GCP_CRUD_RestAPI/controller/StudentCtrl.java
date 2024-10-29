@@ -15,12 +15,11 @@ public class StudentCtrl {
     @Autowired
     StudentRepo repo;
 
-
     @GetMapping("greet/{name}")
     private String greet(@PathVariable String name){
 
         Student std = new Student(
-                UUID.randomUUID().toString(),"Ram"
+                UUID.randomUUID().toString(),name
         );
 
         repo.save(std);
